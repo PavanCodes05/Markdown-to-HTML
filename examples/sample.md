@@ -1,4 +1,4 @@
-# Static Site Generator - **Markdown to HTML**
+# Static Site Generator
 
 1. Features:
    - It should handle multiple markdown files at once
