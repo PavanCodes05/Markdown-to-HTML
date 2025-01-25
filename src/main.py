@@ -1,7 +1,7 @@
 import os
 
-from parser import read_markdown, write_html_template, find_body_pos
-from generator import template, generate_html, create_html
+from parser import read_markdown, find_body_pos
+from generator import template, generate_html, create_html, generate_output
 
 markdown_contents = read_markdown("examples\sample.md")
 
@@ -28,3 +28,5 @@ template_contents = template("src\/templates\/template.html")
 body_pos = find_body_pos(template_contents)
 
 file_contents = create_html(template_contents, html_contents, body_pos)
+
+generate_output(file_path, file_contents)

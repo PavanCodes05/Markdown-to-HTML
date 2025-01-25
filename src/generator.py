@@ -41,4 +41,11 @@ def create_html(template_contents, html_contents, pos):
     file_content = template_contents
 
     return file_content
+
+def generate_output(path, file_contents):
+    with open(path, "w") as file:
+        for content in file_contents:
+            file.write(content)
+    
+    print("Output Generated!")
     
