@@ -1,3 +1,8 @@
+def template(file_path):
+    with open(file_path, "r") as file:
+        contents = file.readlines()
+    return contents
+
 def generate_html(contents):
     tags = []
 
