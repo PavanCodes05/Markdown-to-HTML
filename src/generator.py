@@ -30,3 +30,15 @@ def generate_html(contents):
             tags.append(tag)
 
     return tags
+
+def create_html(template_contents, html_contents, pos):
+    tags = ""
+    for content in html_contents:
+        tags += content
+    
+    template_contents[pos] = tags
+
+    file_content = template_contents
+
+    return file_content
+    
